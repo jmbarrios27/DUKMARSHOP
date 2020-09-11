@@ -1,0 +1,205 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+    text-decoration: none;
+}
+
+body {
+    font-size: 1.5rem;
+    font-family: 'Oswald', sans-serif;
+}
+
+h1 {
+    font-family: 'Source Serif Pro', serif
+}
+
+.container {
+    width: 100%;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.fw-300 {
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/*BOTONES*/
+
+.btn {
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 10px 10px 10px 10px;
+    font-size: 1.3rem;
+    border: 1px solid black;
+}
+
+.btn-primario {
+    background-color: transparent;
+    color: black;
+}
+
+.btn-primario:hover {
+    transition: all 0.6s linear;
+    transform: scale(5) rotate(3deg);
+    cursor: pointer;
+    border: 5px solid gray;
+}
+
+.btn-secundario {
+    background-color: transparent;
+    color: black
+}
+
+.btn-secundario:hover {
+    transition: all 0.6s linear;
+    transform: scale(2) rotate(3deg);
+    cursor: pointer;
+    border: 5px solid lightskyblue;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #f5f5f5;
+    position: relative;
+    margin-bottom: auto;
+}
+
+.topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: block;
+}
+
+.topnav #myLinks {
+    display: inline;
+}
+
+#site-name {
+    color: white;
+}
+
+.topnav a.icon {
+    background: #008b8b;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    color: white;
+}
+
+.topnav a:hover {
+    background-color: #AFEEEE;
+    color: black;
+    transition: all 0.4s ease-in-out;
+}
+
+.active {
+    background-color: #008b8b;
+    color: black;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+
+
+/*Background cover*/
+
+.background-intro {
+    background-image: url('../image/background.png');
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    margin: 0 auto !important;
+}
+
+.main-contenido-background {
+    padding-top: 15rem;
+    padding-left: 1rem;
+    text-align: center;
+}
+
+.botones-principales a {
+    font-weight: bold;
+}
+
+.main-contenido-background h1 {
+    text-align: center;
+    font-size: 2.3rem;
+    margin: 0 auto;
+}
+
+.botones-principales a {
+    font-size: 1rem;
+}
+
+@media (min-width: 768px) {
+    .main-contenido-background h1 {
+        font-size: 10rem;
+    }
+    .botones-principales a {
+        margin-right: 4rem;
+        margin-bottom: 2rem !important;
+    }
+    .background-intro {
+        background-position: center center;
+    }
+}
+
+
+/*Slider*/
+
+.mySlides {
+    display: block;
+}
+
+.automatic-slideshow h2 {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-right: 3rem;
+}
+
+@media (min-width: 768px) {
+    .automatic-slideshow h2 {
+        font-size: 5rem;
+        text-align: center;
+        margin-right: 3rem;
+    }
+}
+
+.mySlides img {
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+}
+
+@media (min-width: 768PX) {
+    .mySlides img {
+        width: 50%;
+    }
+    .automatic-slideshow hr {
+        width: 66.6%;
+    }
+}
+
+automatic-slideshow h2:hover {
+    transition: all 0.3s ease-in;
+}
