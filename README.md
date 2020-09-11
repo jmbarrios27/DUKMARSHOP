@@ -1,2 +1,0 @@
-# DUKMARSHOP
-DUMARSHOP Webpage repository
